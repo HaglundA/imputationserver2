@@ -1,0 +1,23 @@
+name:  HapMap 2 (GRCh37/hg19)
+description: HapMap2 Reference Panel for Michigan Imputation Server
+version: 2.0.0
+website: http://imputationserver.sph.umich.edu
+category: RefPanel
+id: hapmap-2
+
+properties:
+  id: hapmap-2
+  genotypes: /rds/general/user/ah3918/home/TOOLS/REF_DATA/msavs/hapmap_r22.chr$chr.CEU.hg19.recode.msav
+  sites: /rds/general/user/ah3918/home/TOOLS/REF_DATA/sites/hapmap_r22.chr$chr.CEU.hg19_impute.sites.gz
+  mapEagle: /rds/general/user/ah3918/home/TOOLS/REF_DATA/map/genetic_map_hg19_withX.txt.gz
+  refEagle: /rds/general/user/ah3918/home/TOOLS/REF_DATA/hapmap_r22.chr$chr.CEU.hg19.recode.bcf
+  build: hg19
+  qcFilter:
+    alleleSwitches: 100  
+  populations:
+    - id: eur
+      name: EUR
+      samples: 60
+    - id: "off"
+      name: Off
+      samples: -1  
